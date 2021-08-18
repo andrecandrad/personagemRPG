@@ -1,0 +1,49 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: linear-gradient(to right, #ed213a, #93291e);
+}
+
+fieldset{
+    padding: 20px;
+}
+
+.campo{
+    padding: 10px;
+}
+
+label{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.atributo{
+    padding: 10px;
+}
+
+span{
+    margin-left: 10px;
+}
+
+.pontos{
+    margin-bottom: 15px;
+}
+
+.pontos span{
+    font-weight: 600;
+}
+
+form{
+    width: 25%;
+    margin-top: 13%;
+    display: inline-block;
+}
+
+#form1{
+    margin-left: 25%;
+}
+
+legend{
+    font-size: 1.2em;
+    font-weight: 500;
+}

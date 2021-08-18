@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro Personagem</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <form name="cadastro" method="post" action="" id="form1">
+            <fieldset>
+                <legend>Cadastro de Personagem</legend>
+                <div>
+                    <div class="campo">
+                        <label for="nomejog">Nome: </label>
+                        <input id="nome" type="text" placeholder="Digite o nome">
+                    </div>
+
+                    <div class="campo">
+                        <label for=" raça">Classe: </label>
+                        <select name="classe" id="classe">
+                            <option value="Guerreiro">Guerreiro</option>
+                            <option value="Mago">Mago</option>
+                            <option value="Feiticeiro">Feiticeiro</option>
+                            <option value="Cavaleiro">Cavaleiro</option>
+                            <option value="Arqueiro">Arqueiro</option>
+                        </select>
+                    </div>
+
+                    </label>
+                    <div class="campo" id="raca">
+                        <label for="raca">Raça: </label>
+                        <input type="radio" name="raca" value="Humano" checked>Humano</input>
+                        <input type="radio" name="raca" value="Elfo">Elfo</input>
+                        <input type="radio" name="raca" value="Anão"> Anão</input>
+                        </label>
+                    </div>
+
+                    <div class="campo">
+                        <fieldset>
+                            <legend>Atributos</legend>                    
+                            <div class="atributos">
+                                <div class="pontos">
+                                    <span>Pontos: </span>
+                                    <input type="text" name="pt" id="pt" size="2" value="10" readonly="readonly"/>
+                                </div>
+
+                                <div class="atributo">
+                                    <input type="button" value="-" class="botao" onclick="removeAtributo('forca')"/>
+                                    <input type="button" value="+" class="botao" onclick="adicionaAtributo('forca')" />
+                                    <input type="text" name="forca" id="forca" size="2" value="0" readonly="readonly"/>
+                                    <span>Força</span>
+                                </div>
+
+                                <div class="atributo">
+                                    <input type="button" value="-" class="botao" onclick="removeAtributo('inteligencia')"/>
+                                    <input type="button" value="+" class="botao" onclick="adicionaAtributo('inteligencia')"/>
+                                    <input type="text" name="inteligencia" id="inteligencia" size="2" value="0" readonly="readonly"/>
+                                    <span>Inteligência</span>
+                                </div>
+
+                                <div class="atributo">
+                                    <input type="button" value="-" class="botao" onclick="removeAtributo('agilidade')"/>
+                                    <input type="button" value="+" class="botao" onclick="adicionaAtributo('agilidade')"/>
+                                    <input type="text" name="agilidade" id="agilidade" size="2" value="0" readonly="readonly"/>
+                                    <span>Agilidade</span>
+                                </div>
+
+                                <div class="atributo">
+                                    <input type="button" value="-" class="botao" onclick="removeAtributo('destreza')"/>
+                                    <input type="button" value="+" class="botao" onclick="adicionaAtributo('destreza')"/>
+                                    <input type="text" name="destreza" id="destreza" size="2" value="0" readonly="readonly"/>
+                                    <span>Destreza</span>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                <button type="button" id="btn">enviar</button>
+            </fieldset>
+
+            </div>
+        </form>
+
+
+        <form name="cadastro" method="post" action="">
+            <fieldset>
+                <legend>Dados do usuário</legend>
+                <div>
+                    <div class="campo">
+                        <label for="nomejog">Nome: </label>
+                        <input id="nomeResultado" type="text" placeholder="O nome do personagem" readonly="readonly">
+                    </div>
+
+                    <div class="campo">
+                        <label for="nomejog">Classe: </label>
+                        <input id="classeResultado" type="text" placeholder="A classe do personagem" readonly="readonly">
+                    </div>
+
+                    <div class="campo">
+                        <label for="nomejog">Raça: </label>
+                        <input id="racaResultado" type="text" placeholder="A raça do personagem" readonly="readonly" value="">
+                    </div>
+
+                    <fieldset style="margin-top: 10px;">
+                        <legend>Atributos</legend>                    
+                        <div class="atributos">
+                            <div class="atributo">                            
+                                <input type="text" name="forcaResultado" id="forca" size="2" value="0" readonly="readonly"/>
+                                <span>Força</span>
+                            </div>
+
+                            <div class="atributo">                           
+                                <input type="text" name="inteligenciaResultado" id="inteligencia" size="2" value="0" readonly="readonly"/>
+                                <span>Inteligência</span>
+                            </div>
+
+                            <div class="atributo">
+                                <input type="text" name="agilidadeResultado" id="agilidade" size="2" value="0" readonly="readonly"/>
+                                <span>Agilidade</span>
+                            </div>
+
+                            <div class="atributo">
+                                <input type="text" name="destrezaResultado" id="destreza" size="2" value="0" readonly="readonly"/>
+                                <span>Destreza</span>
+                            </div>
+                        </div>
+                    </fieldset>
+            </fieldset>
+        </form>
+    <script type="text/javascript" src="script.js"> </script>
+</body>
+</html>
